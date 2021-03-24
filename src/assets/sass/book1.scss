@@ -1,20 +1,20 @@
 @import "./variables";
 
-.head{
-    padding-bottom: 120px;
+.heading-book1{
+    padding-bottom: 120px !important;
     .media-body{
         .title1{
             font-size: 30px;
-            color: $title1;
+            color:$style1;
             font-weight: bold;
             position: relative;
             padding-bottom: 25px;
             margin-bottom: 20px;
             &::after{
                 content: '';
-                width: 80%;
+                width: 100%;
                 height: 1px;
-                background-color: $title1;
+                background-color: $style1;
                 position: absolute;
                 bottom: 0;
                 right: 0;
@@ -34,13 +34,12 @@
     }
 }
 .book-pictures{
-    padding-bottom: 120px;
-    position: relative;
+    padding-bottom: 150px;
     h2{
-            color: $title1;
-            font-weight: bold;
-            font-size: 40px;
-            margin-bottom: 100px;
+        color: $style1;
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 100px;
     }
     .carousel-inner{
         .carousel-item{
@@ -52,8 +51,116 @@
     }
     .carousel-control-next,
     .carousel-control-prev{
-        color: $title1;
+        width: 0;
+        height: 0;
+        color: $style1;
+    }        
+    .carousel-control-next{
+    right: 91%;
+      top: 50%;
+   
+    }
+    .carousel-control-prev{
+       right: 9%;
+        top: 50%;
+    }
+}
+.add-to-cart{
+    padding-bottom: 150px;
+    h2{
+        color: $style1;
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 100px;
+    }
+    .overlay{
+        background-color: rgba($style1 , 0.7);
+        right: 50%;
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+        transition: all 300ms ease;
+        transform: translateX(50%);
         position: absolute;
-       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    img{
+        width: 300px;
+        height: auto;
+    }
+}
+.btn-cart{
+    font-size: 30px;
+    font-weight: bold;
+    color: $style1;
+    background-color: $white;
+    border-radius: 0;
+    padding: 8px 12px;
+    transition: all 200ms ease;
+    box-shadow: 0px 0px 5px 1px $white;
+    &:focus{
+        box-shadow: 0px 0px 5px 1px $white;
+    }
+    &:hover{
+        color: $white;
+        background-color: $style1;
+    }
+}
+.footer-book1{
+    background-color: $style1 !important;
+    .social-icons{
+        svg{
+            color: $white !important;
+            &:hover{
+                background-color: $white !important;
+                color: $style1 !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .heading-book1{
+        .thumbnail1{
+            width: 350px !important;
+         }
+    }
+}
+@media (max-width: 991.98px) {
+    .heading-book1{
+        .thumbnail1{
+            margin-top: 90px;
+         }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .heading-book1{
+        .thumbnail1{
+            width: 400px;
+         }
+    }
+}
+
+@media (min-width: 991.98px)and(max-width:1199.98px) { 
+    .heading{
+        .media{
+            .thumbnail1{
+                transform: translateY(30%);
+            }
+        }
+    }
+}
+@media(max-width:412px){
+    html , body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
     }
 }

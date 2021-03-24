@@ -15,8 +15,6 @@
 body{
 font-family:  'Cairo' , Calibri, Arial ,Segoe UI, Trebuchet MS, Consolas, Tahoma;
 background-color: $background;
-
-
 }
 .top-menu{
     padding-bottom: 120px;
@@ -36,7 +34,7 @@ background-color: $background;
     }
 }
 .heading{
-    padding-bottom: 80px;
+    padding-bottom: 150px;
     .media-body{
         h2{
             font-size: 30px;
@@ -46,7 +44,7 @@ background-color: $background;
             padding-bottom: 20px;
             &::after{
                 content: '';
-                width: 20%;
+                width: 25%;
                 height: 2px;
                 background-color: $muted;
                 position: absolute;
@@ -130,10 +128,9 @@ background-color: $background;
         line-height: 30px;
         a{
             display: inline-block;
-            margin-right: 10px;
+            margin-right: 0px;
            svg{
-                color: $style;
-                border: 1px solid $style;
+                color: $black;
                 width: 50px;
                 height: 50px;
                 line-height: 50px;
@@ -142,7 +139,7 @@ background-color: $background;
                 text-align: center;
                 &:hover{
                     color: $white;
-                    background-color: $style;
+                    background-color: $black;
                 }
             }
         }
@@ -158,18 +155,12 @@ background-color: $background;
     }
 }
 @media (max-width: 575.98px) {  
-    html , body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .heading{
         .media{
             p{
                 line-height: 30px;
             }
             a{
-                transform: translateX(0%) !important;
                 margin-bottom: 20px;
             }
         }
@@ -181,9 +172,11 @@ background-color: $background;
             display: initial;
             .media-body{
                 margin-bottom: 30px;
-            }
-            a{
-                transform: translateX(-38%);
+                h2{
+                    &::after{
+                        width: 22%;
+                    }
+                }
             }
         }
     }
@@ -198,4 +191,14 @@ background-color: $background;
         }
     } 
 }
+@media (min-width: 991.98px)and(max-width:1199.98px) { 
+    .heading{
+        .media{
+            a{
+                transform: translateY(50%);
+            }
+        }
+    }
+}
+
 

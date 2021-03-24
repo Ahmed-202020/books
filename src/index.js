@@ -10,10 +10,14 @@ $("#year").text(new Date().getFullYear());
 
 $(window).scroll(function(){
     if ($(this).scrollTop() >= 100) {
-
         $("nav").addClass("scroll");
     }
     else {
         $("nav").removeClass("scroll");
     }
 });
+$(function(){
+    $("#shopping").on("click" , function(){
+        alert("تم إضافة كتاب إلي عربة الشراء");
+    });
+})
