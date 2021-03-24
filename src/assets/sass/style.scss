@@ -1,5 +1,6 @@
 @import "./variables";
 @import "./book1.scss";
+@import "./book2.scss";
 @font-face {
     font-family: 'Cairo';
     font-style: normal;
@@ -61,8 +62,6 @@ background-color: $background;
     }
     a{
         display: inline-block;
-        margin-top: auto;
-        margin-bottom: auto;
         img{
             width: 200px;
             height: auto;
@@ -191,11 +190,11 @@ background-color: $background;
         }
     } 
 }
-@media (min-width: 991.98px)and(max-width:1199.98px) { 
+@media (min-width: 991.98px)and(max-width:6000.98px) { 
     .heading{
         .media{
             a{
-                transform: translateY(50%);
+                transform: translateY(50%) !important;
             }
         }
     }
