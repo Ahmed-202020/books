@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./book1.scss";
 @font-face {
     font-family: 'Cairo';
     font-style: normal;
@@ -18,7 +19,7 @@ background-color: $background;
 
 }
 .top-menu{
-    margin-bottom: 120px;
+    padding-bottom: 120px;
     .navbar{
         img{
             width: 15%;
@@ -35,7 +36,7 @@ background-color: $background;
     }
 }
 .heading{
-margin-bottom: 120px;
+    padding-bottom: 80px;
     .media-body{
         h2{
             font-size: 30px;
@@ -64,11 +65,12 @@ margin-bottom: 120px;
         display: inline-block;
         margin-top: auto;
         margin-bottom: auto;
+        img{
+            width: 200px;
+            height: auto;
+        }
     }
-    img{
-        width: 200px;
-        height: auto;
-    }
+ 
 }
 .contact-us{
     h2{
