@@ -1,18 +1,12 @@
 @import "./variables";
-@import "./book1.scss";
-@import "./book2.scss";
-@font-face {
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/cairo-v9-arabic-regular.eot'); 
-    src: local('Cairo'),
-    url('../fonts/cairo-v9-arabic-regular.eot?#iefix') format('embedded-opentype'), 
-    url('../fonts/cairo-v9-arabic-regular.woff2') format('woff2'), 
-    url('../fonts/cairo-v9-arabic-regular.woff') format('woff'), 
-    url('../fonts/cairo-v9-arabic-regular.ttf') format('truetype'), 
-    url('../fonts/cairo-v9-arabic-regular.svg#Cairo') format('svg'); 
-}
+@import "./books.scss";
+@import "./first-book.scss";
+@import "./second-book.scss";
+@import "./third-book.scss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
 body{
 font-family:  'Cairo' , Calibri, Arial ,Segoe UI, Trebuchet MS, Consolas, Tahoma;
 background-color: $background;
@@ -39,13 +33,14 @@ background-color: $background;
     .media-body{
         h2{
             font-size: 30px;
+            display: inline-block;
             color: $style;
             font-weight: bold;
             position: relative;
             padding-bottom: 20px;
             &::after{
                 content: '';
-                width: 25%;
+                width: 100%;
                 height: 2px;
                 background-color: $muted;
                 position: absolute;
@@ -61,25 +56,49 @@ background-color: $background;
         }
     }
     a{
-        display: inline-block;
-        img{
-            width: 200px;
-            height: auto;
+        text-decoration: none;
+        background-color: $style;
+        color: $white;
+        padding: 30px;
+        width: 300px;
+        font-size: 25px;
+        border-radius: 7px;
+        font-weight: bold;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+        position: relative;
+        span{
+            margin:0 30px;
+        }
+        svg.right-hand{
+         position: absolute;
+         right: 13% ;
+        }
+        svg.left-hand{
+            position: absolute;
+            left:12.9%;
         }
     }
- 
 }
 .contact-us{
     h2{
         font-size: 30px;
         font-weight: bold;
         color: $style;
+        display: inline-block;
+        margin-right: auto;
+        margin-left: auto;
         position: relative;
         margin-bottom: 50px;
         padding-bottom: 15px;
         &::after{
             content: '';
-            width: 15%;
+            width: 100%;
             height: 2px;
             background-color: $muted;
             position: absolute;
@@ -154,28 +173,46 @@ background-color: $background;
     }
 }
 @media (max-width: 575.98px) {  
+    html , body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .heading{
         .media{
             p{
                 line-height: 30px;
             }
             a{
-                margin-bottom: 20px;
+                max-width: 240px !important;
+              max-height: 120px !important;
             }
         }
     }
 }
+@media (max-width: 767.98px) {
+    .heading{
+        .media{
+            a{
+              width: 250px !important;
+              height: 150px !important;
+                span{
+                font-size: 20px !important;
+                margin: 0 15px !important;
+                }
+            }
+        }
+    }
+} 
 @media (max-width: 991.98px) { 
     .heading{
         .media{
             display: initial;
             .media-body{
-                margin-bottom: 30px;
-                h2{
-                    &::after{
-                        width: 22%;
-                    }
-                }
+                margin-bottom: 85px;
+            }
+            a{
+                margin: auto;
             }
         }
     }
@@ -190,14 +227,8 @@ background-color: $background;
         }
     } 
 }
-@media (min-width: 991.98px)and(max-width:6000.98px) { 
-    .heading{
-        .media{
-            a{
-                transform: translateY(50%) !important;
-            }
-        }
-    }
-}
+
+
+
 
 

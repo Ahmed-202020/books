@@ -1,0 +1,52 @@
+@import "./variables";
+
+.heading-book-2{
+    .media{
+        .title{
+            color: $style2;
+            &::after{
+                color: $style2;
+            }
+        }
+        .text{
+            color: $text2;
+        }
+    }
+}
+.book-pictures-2{
+    h2{
+        color: $style2;
+    }
+    .carousel-control-next,
+    .carousel-control-prev{
+        color: $style2;
+    }
+}
+.add-to-cart-2{
+    h2{
+        color: $style2;
+    }
+    .overlay{
+        background-color: rgba($style2 , 0.7);
+    }
+}
+.btn-cart-2{
+    color: $style2;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus,
+    &:active:hover{
+        background-color: $style2;
+    }
+}
+.footer-book-2{
+    background-color: $style2 !important;
+    .social-icons{
+        svg{
+            &:hover{
+                color: $style2 !important;
+            }
+        }
+    }
+}

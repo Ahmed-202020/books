@@ -1,0 +1,61 @@
+@import "./variables";
+
+.heading-book-3{
+    .media{
+        .title{
+            color: $style3;
+            &::after{
+                color: $style3 ;
+            }
+        }
+        .text{
+            color: $text3 ;
+        }
+    }
+}
+.book-pictures-2{
+    h2{
+        color: $style3;
+    }
+    .carousel-control-next,
+    .carousel-control-prev{
+        color: $style3;
+    }
+}
+.add-to-cart-3{
+    h2{
+        color: $style3;
+    }
+    .overlay{
+        background-color: rgba($style3 , 0.7);
+        height: 340px;
+    }
+}
+.btn-cart-3{
+    color: $style3;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus,
+    &:active:hover{
+        background-color: $style3;
+    }
+}
+.footer-book-3{
+    background-color: $style3 !important;
+    .social-icons{
+        svg{
+            &:hover{
+                color: $style3 !important;
+            }
+        }
+    }
+}
+@media(max-width:432px){
+    .add-to-cart{
+        .overlay{
+            width: 200px !important;
+            height: 225px !important;
+        }
+    }
+}

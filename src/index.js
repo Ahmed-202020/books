@@ -20,4 +20,86 @@ $(function(){
     $("#shopping").on("click" , function(){
         alert("تم إضافة كتاب إلي عربة الشراء");
     });
-})
+    $('svg.right-hand').animate({ right:'10%'} , 400 , function(){
+        $('svg.right-hand').animate({ right:'13%'} , 400 , function(){
+            $('svg.right-hand').animate({ right:'10%'} , 400 , function(){
+                $('svg.right-hand').animate({ right:'13%'} , 400 , function(){
+                    $('svg.right-hand').animate({ right:'10%'} , 400 , function(){
+                        $('svg.right-hand').animate({ right:'13%'} , 400 , function(){
+                            $('svg.right-hand').animate({ right:'10%'} , 400 , function(){
+                                $('svg.right-hand').animate({ right:'13%'} , 400 , function(){
+                                    $('svg.right-hand').animate({ right:'10%'} , 400 , function(){
+                                        $('svg.right-hand').animate({ right:'13%'} , 400 , function(){
+                                            $('svg.right-hand').animate({ right:'10%'} , 400 , function(){
+                                                $('svg.right-hand').animate({ right:'13%'} , 400 , function(){
+                                                    $('svg.right-hand').animate({ right:'10%'} , 400 , function(){
+                                                        $('svg.right-hand').animate({ right:'13%'} , 400 , function(){
+                                                            $('svg.right-hand').animate({ right:'10%'} , 400 , function(){
+                                                                $('svg.right-hand').animate({ right:'13%'} , 400 , function(){
+                                                                    $('svg.right-hand').animate({ right:'10%'} , 400 , function(){
+                                                                        $('svg.right-hand').animate({ right:'13%'} , 400 , function(){
+                                                                            $('svg.right-hand').animate({ right:'10%'} , 400 , function(){
+                                                                                $('svg.right-hand').animate({ right:'13%'} , 400 , function(){
+                                                                                });
+                                                                            });
+                                                                        });
+                                                                    });
+                                                                });
+                                                            });
+                                                        });
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+    });
+    $('svg.left-hand').animate({left:'9.9%'} , 400 , function(){
+        $('svg.left-hand').animate({ left:'12.9%'} , 400 , function(){
+            $('svg.left-hand').animate({left:'9.9%'} , 400 , function(){
+                $('svg.left-hand').animate({ left:'12.9%'} , 400 , function(){
+                    $('svg.left-hand').animate({left:'9.9%'} , 400 , function(){
+                        $('svg.left-hand').animate({ left:'12.9%'} , 400 , function(){
+                            $('svg.left-hand').animate({left:'9.9%'} , 400 , function(){
+                                $('svg.left-hand').animate({ left:'12.9%'} , 400 , function(){
+                                    $('svg.left-hand').animate({left:'9.9%'} , 400 , function(){
+                                        $('svg.left-hand').animate({ left:'12.9%'} , 400 , function(){
+                                            $('svg.left-hand').animate({left:'9.9%'} , 400 , function(){
+                                                $('svg.left-hand').animate({ left:'12.9%'} , 400 , function(){
+                                                    $('svg.left-hand').animate({left:'9.9%'} , 400 , function(){
+                                                        $('svg.left-hand').animate({ left:'12.9%'} , 400 , function(){
+                                                            $('svg.left-hand').animate({left:'9.9%'} , 400 , function(){
+                                                                $('svg.left-hand').animate({ left:'12.9%'} , 400 , function(){
+                                                                    $('svg.left-hand').animate({left:'9.9%'} , 400 , function(){
+                                                                        $('svg.left-hand').animate({ left:'12.9%'} , 400 , function(){
+                                                                            $('svg.left-hand').animate({left:'9.9%'} , 400 , function(){
+                                                                                $('svg.left-hand').animate({ left:'12.9%'} , 400 , function(){
+                                                                                });
+                                                                            });
+                                                                        });
+                                                                    });
+                                                                });
+                                                            });
+                                                        });
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+    });
+     
+   
+});

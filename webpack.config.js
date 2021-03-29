@@ -61,25 +61,35 @@ module.exports = {
         ],
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            filename: "index.html",
-            template: "./src/index.html"
-        }),
-        new HtmlWebpackPlugin({
-          filename: "book1.html",
-          template: "./src/book1.html"
+      new HtmlWebpackPlugin({
+        filename: "index.html",
+        template: "./src/index.html",
       }),
       new HtmlWebpackPlugin({
-        filename: "book2.html",
-        template: "./src/book2.html"
+        filename: "books.html",
+        template: "./src/books.html",
+      }),
+      new HtmlWebpackPlugin({
+        filename: "first-book.html",
+        template: "./src/first-book.html",
+      }),
+    new HtmlWebpackPlugin({
+      filename: "second-book.html",
+      template: "./src/second-book.html",
+      minify: true
     }),
-        new MiniCssExtractPlugin({
-            filename: "assets/css/style.css"
-        }),
-        new CleanWebpackPlugin({
-          cleanStaleWebpackAssets: false,
-        }),
-        new OptimizeCssAssetsPlugin({}),
+    new HtmlWebpackPlugin({
+      filename: "third-book.html",
+      template: "./src/third-book.html",
+      minify: true
+    }),
+    new MiniCssExtractPlugin({
+      filename: "assets/css/style.css"
+    }),
+      new CleanWebpackPlugin({
+        cleanStaleWebpackAssets: false,
+      }),
+      new OptimizeCssAssetsPlugin({}),
     ],
     devServer: {
         compress: true,
