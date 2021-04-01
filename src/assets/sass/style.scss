@@ -12,21 +12,62 @@ font-family:  'Cairo' , Calibri, Arial ,Segoe UI, Trebuchet MS, Consolas, Tahoma
 background-color: $background;
 }
 .top-menu{
-    padding-bottom: 120px;
+    padding-bottom: 140px;
     .navbar{
-        img{
-            width: 15%;
+        .navbar-brand{
+            width: 5%;
+            margin-left: 3rem;
             height: auto;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    color: $muted;
+                    font-weight: bold;
+                    font-size: 20px;
+                    display: block;
+                    &:hover,
+                    &:active,
+                    &:focus,
+                    &:active:focus,
+                    &:active:hover{
+                        color: $white ;
+                        box-shadow: 0 0 5px 1px $muted;
+                    }
+                }
+                &:hover,
+                &:active,
+                &:focus,
+                &:active:focus,
+                &:active:hover{
+                    background-color: $muted;
+                    color: $white !important;
+                }
+                margin: 0 10px;
+                transition: all 200ms ease;
+            }
+            .active{
+                background-color: $muted ;
+                color: $white ;
+                .nav-link{
+                    color: $white ;
+                    box-shadow: 0 0 5px 1px $muted;
+                }
+            }
         }
     }
 }
 .scroll{
-    border-bottom: 1px solid $muted !important;
+    border-bottom: 1px solid $style !important;
     background-color: #eee;
-    img{
-        width: 10% !important;
-        height: auto;
-    }
+    // img{
+    //     width: 80% !important;
+    //     height: auto;
+    // }
 }
 .heading{
     padding-bottom: 150px;
@@ -178,6 +219,14 @@ background-color: $background;
         align-items: center;
         justify-content: center;
     }
+    .top-menu{
+        .navbar{
+            .navbar-brand{
+               margin-left: 0;
+               min-width: 15% !important;
+            }
+        }
+    }
     .heading{
         .media{
             p{
@@ -191,6 +240,19 @@ background-color: $background;
     }
 }
 @media (max-width: 767.98px) {
+    .top-menu{
+        .navbar{
+            .navbar-nav{
+                .nav-item{
+                    margin: 0;
+                    .nav-link{
+                        box-shadow: none;
+                        padding-right: 5px;
+                    }
+                }            
+            }
+        }
+    }
     .heading{
         .media{
             a{
@@ -205,6 +267,13 @@ background-color: $background;
     }
 } 
 @media (max-width: 991.98px) { 
+    .top-menu{
+        .navbar{
+            .navbar-brand{
+                width: 8% !important;
+            }
+        }
+    }
     .heading{
         .media{
             display: initial;
@@ -226,6 +295,15 @@ background-color: $background;
             font-size: 18px;
         }
     } 
+}
+@media(max-width:1199.98px){
+    .top-menu{
+        .navbar{
+            .navbar-brand{
+                width: 6% ;
+            }
+        }
+    }
 }
 
 

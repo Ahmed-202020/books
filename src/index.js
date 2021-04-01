@@ -8,15 +8,25 @@ import "normalize.css/normalize.css";
 
 $("#year").text(new Date().getFullYear());
 
-$(window).scroll(function(){
+$(window).on( 'scroll' , function(){
     if ($(this).scrollTop() >= 100) {
         $("nav").addClass("scroll");
     }
     else {
         $("nav").removeClass("scroll");
     }
-});
+});    
 $(function(){
+    $(window).on( 'resize' , function(){
+        var width = $(window).width();
+        if(width<=767){
+            $("nav").addClass("scroll");
+        }
+        else{
+            $("nav").removeClass("scroll");
+        }
+    });
+
     $("#shopping").on("click" , function(){
         alert("تم إضافة كتاب إلي عربة الشراء");
     });

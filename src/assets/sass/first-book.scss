@@ -1,5 +1,18 @@
 @import "./variables";
 
+.top-menu{
+    .navbar{
+        .navbar-nav{
+            .active-first-book{
+                background-color: $style1 !important;
+                .nav-link{
+                    box-shadow: 0 0 5px 1px $style1 !important;
+                }
+            }
+        }
+    }
+}
+
 .heading-book-1{
     padding-bottom: 120px !important;
     .media-body{

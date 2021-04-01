@@ -1,11 +1,22 @@
 @import "./variables";
-
+.top-menu{
+    .navbar{
+        .navbar-nav{
+            .active-second-book{
+                background-color: $style2 !important;
+                .nav-link{
+                    box-shadow: 0 0 5px 1px $style2 !important;
+                }
+            }
+        }
+    }
+}
 .heading-book-2{
     .media{
         .title{
             color: $style2;
             &::after{
-                color: $style2;
+                background-color: $style2;
             }
         }
         .text{
@@ -15,11 +26,11 @@
 }
 .book-pictures-2{
     h2{
-        color: $style2;
+        color: $style2 ;
     }
     .carousel-control-next,
     .carousel-control-prev{
-        color: $style2;
+        color: $style2 ;
     }
 }
 .add-to-cart-2{

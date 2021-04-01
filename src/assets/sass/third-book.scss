@@ -1,11 +1,22 @@
 @import "./variables";
-
+.top-menu{
+    .navbar{
+        .navbar-nav{
+            .active-third-book{
+                background-color: $style3 !important;
+                .nav-link{
+                    box-shadow: 0 0 5px 1px $style3 !important;
+                }
+            }
+        }
+    }
+}
 .heading-book-3{
     .media{
         .title{
             color: $style3;
             &::after{
-                color: $style3 ;
+                background-color: $style3 ;
             }
         }
         .text{
@@ -13,7 +24,7 @@
         }
     }
 }
-.book-pictures-2{
+.book-pictures-3{
     h2{
         color: $style3;
     }
